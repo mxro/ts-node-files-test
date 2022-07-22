@@ -1,0 +1,28 @@
+{
+  "name": "ts-node-files-test",
+  "version": "1.0.0",
+  "description": "Testing if the `--files` directive of `ts-node` works",
+  "main": "dist/index.js",
+  "scripts": {
+    "node": "cross-env TS_NODE_FILES=true TS_NODE_DEBUG=true ts-node --files --project ./tsconfig.json ./src/index.ts",
+    "compile": "tsc --project ./tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxro/ts-node-files-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mxro/ts-node-files-test/issues"
+  },
+  "homepage": "https://github.com/mxro/ts-node-files-test#readme",
+  "dependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

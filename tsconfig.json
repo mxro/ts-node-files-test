@@ -1,0 +1,9 @@
+{  
+  "include": [
+    "typings.d.ts",
+    "./src/**/*"
+  ],
+  "compilerOptions": {
+    "outDir": "dist"
+  }
+}
